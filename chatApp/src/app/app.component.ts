@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chatApp';
+  messages = [{content : "hishhs"},
+  {content : "hhhhs"}];
+
 }
