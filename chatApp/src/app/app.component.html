@@ -1,9 +1,10 @@
 <body>
   <h1>{{title}}</h1>
+  <textarea [(ngModel)]="currentMessage"></textarea>
+  <button (click)="sendMessage()">Send</button>
   <table>
     <tr *ngFor="let message of messages">
       <td>{{message.content}}</td>
     </tr>
   </table>
-  <textarea></textarea>
 </body>
