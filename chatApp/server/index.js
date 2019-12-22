@@ -1,13 +1,11 @@
-const url = require('url');
-const http = require('http');
+// app.js
+const express = require('express')
 
-const app = http.createServer((request, response) => {
-    let messages = ["You are great!", "You can accomplish anything!", "Success is in your future!"];
-    messages.forEach( (m) => { 
-      console.log(m);
-    });
-});
+// Create Express app
+const app = express()
 
-app.listen(3000)
+// A sample route
+app.get('/', (req, res) => res.send('Hello World!'))
 
-
+// Start the Express server
+app.listen(3000, () => console.log('Server running on port 3000!'))
